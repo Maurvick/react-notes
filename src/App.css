@@ -1,0 +1,113 @@
+#root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #f2f2f2;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  margin-bottom: 10px;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.button-blue {
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-blue:hover {
+  background-color: #005bb5;
+}
+
+.button-close:hover {
+  font-weight: 600;
+}
+
+/* This rule applies only to outer elements, 
+  so placing div inside li will not work. */
+.note-list {
+  padding: 0;
+  list-style-type: none;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.note-item {
+  padding: 12px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-item:hover,
+.note-item.activate {
+  background-color: #dcdcdc;
+}
+
+.editor {
+  width: 70%;
+  padding: 20px;
+}
+
+.note-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: none;
+  resize: none;
+  outline: none;
+  color: #333;
+  background-color: #fff;
+}
+
+.note-content {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.6;
+  outline: none;
+  color: #333;
+  background-color: #fff;
+}
+
+.note-content::placeholder {
+  color: #999;
+}
